@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .border {
+    box-sizing: border-box;
+  }
+  .container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container1 {
+    width: 50%;
+    float: left;
+    padding: 20px;
+
+  }
+  .container3{
+    clear: both;
+  }
