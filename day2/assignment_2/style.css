@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .border {
+    box-sizing: border-box;
+  }
+  .container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    
+  }
+  .container1 {
+
+    clear: both;
+    text-align: center;
+    background-color: rgb(248, 126, 126);
+
+  }
+  .container2{
+    clear: both;
+    text-align: center;
+  
+    
+  }
+  .container3{
+    width: 30%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+    background-color: rgb(248, 126, 126);
+    
+    
+  }
+  .container3_1{
+    width: 30%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+    
+    
+  }
