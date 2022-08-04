@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(204, 197, 197);
+  background-color: black;
 }
 .container{
     max-width: 1400px;
@@ -86,9 +86,10 @@ ul {
 .main{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(157, 167, 31);
+    background-color:rgb(155, 226, 226);
     width: 50%;
     height: 100vh;
+    border: 2px solid black;
 }
 
 .aside{
@@ -98,7 +99,7 @@ ul {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color:  rgb(203, 214, 97);
+    background-color:rgb(49, 120, 148);
 
 }
 .box{
@@ -108,7 +109,7 @@ ul {
     justify-content: space-evenly;
     width: 100%;
     height: 180px;
-    background-color: brown;
+    background-color: rgb(155, 226, 226);
     border: 2px solid black;
     
     
