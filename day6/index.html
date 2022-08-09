@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .para{
+            position: absolute;
+            left: 45%;
+            color: rgb(189, 10, 10);
+            font-size: 25px;
+        }
+        .container{
+            position: absolute;
+            left: 45%;
+            top: 30%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="para">
+    <p id="demo_1"> Today Date:</p>
+    <p id="demo_2">Today Day:</p><br>
+    </div>
+
+    <div class="container">
+    <button onclick="myFunction()">Enter Name</button><br>
+    <p id="demo_3"></p>
+    <button onclick="myFunction_1()">ADDITION</BUTton>
+        <P id="sum"></P>
+    <button onclick="myFunction_2()">SUBTRACTION</BUTton>
+        <p id="sub"></p>
+    <button onclick="myFunction_3()">MULTIPLICATION</BUTton>
+        <p id="multi"></p>
+    <button onclick="myFunction_4()">DIVISION</BUTton>
+        <p id="division"></p>
+    </div>
+
+    <script>
+        // ................for date.............
+        const date =new Date();
+        const formatDate = date.toLocaleDateString({day:"numeric",month:"short",year:"numeric"});
+         document.getElementById("demo_1").innerHTML="Today Date "+formatDate
+
+        //................. for day ........
+        const days= ["Sunday", "monday","Tuesday","Wednesday", "Thursday","Friday","Saturday"];
+        const d = new Date();
+        let day =days[d.getDay()];
+        document.getElementById("demo_2").innerHTML="Today Day "+day;
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
