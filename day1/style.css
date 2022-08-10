@@ -1,9 +1,27 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head{
+    position: absolute;
+    
+    left: 34%;
+    top: 5%;
+    font-size: 50px;
+    color: rgb(141, 69, 69);
+    text-shadow: 2px 2px 4px rgb(240, 8, 8);
+  
+}
+.container{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    text-shadow: 2px 2px 4px rgb(240, 8, 8);
+    
 }
 h1{
-    background-color: aquamarine;
+    color: rgb(194, 8, 8);
 }
 h2{
-    background-color: aquamarine;
+    color: rgb(194, 8, 8);
 }
