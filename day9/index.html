@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .para {
+        position: absolute;
+        left: 45%;
+        color: rgb(189, 10, 10);
+        font-size: 25px;
+      }
+      .container {
+        position: absolute;
+        left: 42%;
+        top: 27%;
+      }
+      button {
+        border: 5px solid rgb(185, 19, 19);
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50%;
+      }
+      button:hover{
+        background-color: rgb(82, 139, 120);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="myFunction_1()">Return Sum of all Arguments</button>
+      <p id="sum"></p>
+      <button onclick="more_Value(2,3)">Return more then one value</button>
+      <p id="sum2"></p>
+      
+      <button onclick="rendom()"> Return entire Function and display</button>
+      <p id="info" style="color: red;"></p>
+
+      <button onclick="apf()">Add NEW! in front of a given string</button>
+      <p id="2" style="color: red;"></p>
+
+      <button onclick="adf()">Add First and last 3 characters</button>
+      <p id="3" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

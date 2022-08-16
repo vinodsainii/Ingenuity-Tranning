@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .para {
+        position: absolute;
+        left: 45%;
+        color: rgb(189, 10, 10);
+        font-size: 25px;
+      }
+      .container {
+        position: absolute;
+        left: 45%;
+        top: 30%;
+      }
+      button {
+        border: 5px solid rgb(185, 19, 19);
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50%;
+      }
+      button:hover{
+        background-color: rgb(82, 139, 120);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="myFunction_1()">Remove Extra White Space</button>
+      <p id="string"></p>
+      
+      <button onclick="exam()">Copy an Array Using forEach()</button>
+      <p id="arr"></p>
+      
+      <button onclick="information()">Check all Student Passed</button>
+      <p id="info"></p>
+
+      <button onclick="element()">Add Element inside Array</button>
+      <p id="posi"></p>
+      <button onclick="apple()">Sort In Descending order</button>
+      <p id="desending"></p>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
