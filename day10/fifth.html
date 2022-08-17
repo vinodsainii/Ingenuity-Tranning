@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: rgb(156, 9, 9);
+            font-size:30px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(6, 5, 5);">
+    <script>
+
+let member=[
+{ name: "Ashish", age: 23 },
+  { name: "Ajay", age: 21 },
+  { name: "Arvind", age: 26 },
+  { name: "Mahesh", age: 28 },
+  { name: "Jay", age: 19 },
+];
+
+var bigcitis=member.filter((city) => 
+    (city.age<25)).sort(function(n1,n2){return n2.name-n1.name});
+var re=bigcitis.map((i)=>document.write("<h1>Name : "+i.name +" , "+ "Age : "+ i.age +"<br></h>"))
+
+    
+                   
+        </script>
+</body>
+</html>
