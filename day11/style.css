@@ -56,54 +56,38 @@ body {
     cursor: pointer;
     z-index: 5;
     
-    animation: button1 5s linear infinite;
+  
   }
-  @keyframes button1 {
-    0%{
-        transform: translateX(-50px);
-        color: yellow;
-        box-shadow: 2px 2px 2px blue;
-    }    
-    50%{
-        transform: translateX(100px);
-        color: green;
-        box-shadow: 2px 2px 2px red;
-    } 
-    100%{
-        transform: translateX(-50px);
-        color: yellowgreen;
-        box-shadow: 2px 2px 2px blue;
-    } 
-  }
+
   .dirt {
-    width: 170px;
+    width: 200px;
     position: absolute;
     z-index: 1;
     visibility: hidden ;
    
   }
   #dirt1 {
-    top: 55%;
+    top: 45%;
     left: 20%;
   }
   #dirt2 {
-    top: 80%;
+    top: 70%;
     left: 20%;
   }
   #dirt3 {
-    top: 55%;
+    top: 45%;
     left: 45%;
   }
   #dirt4 {
-    top: 80%;
+    top: 70%;
     left: 45%;
   }
   #dirt5 {
-    top: 55%;
+    top: 45%;
     left: 65%;
   }
   #dirt6 {
-    top: 80%;
+    top: 70%;
     left: 65%;
   }
   .points {
@@ -122,27 +106,27 @@ body {
     z-index: 2;
   }
   #mole1 {
-    top: 55%;
+    top: 45%;
     left: 24%;
   }
   #mole3 {
-    top: 55%;
+    top: 45%;
     left: 48%;
   }
   #mole5 {
-    top: 55%;
+    top: 45%;
     left: 68%;
   }
   #mole2 {
-    top: 82%;
+    top: 72%;
     left: 24%;
   }
   #mole4 {
-    top: 82%;
+    top: 72%;
     left: 49%;
   }
   
   #mole6 {
-    top: 82%;
+    top: 72%;
     left: 69%;
   }
