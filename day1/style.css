@@ -8,20 +8,20 @@ body{
     left: 34%;
     top: 5%;
     font-size: 50px;
-    color: rgb(141, 69, 69);
+    color: rgba(158, 1, 1, 0.856);
     text-shadow: 2px 2px 4px rgb(240, 8, 8);
   
 }
 .container{
     position: absolute;
-    left: 40%;
-    top: 30%;
-    text-shadow: 2px 2px 4px rgb(240, 8, 8);
+    left: 2%;
+    top: 20%;
+ 
     
 }
 h1{
-    color: rgb(194, 8, 8);
+    color:  rgba(158, 1, 1, 0.856);
 }
 h2{
-    color: rgb(194, 8, 8);
+    color:  rgba(158, 1, 1, 0.856);
 }
