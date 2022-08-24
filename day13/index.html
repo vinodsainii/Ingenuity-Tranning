@@ -12,79 +12,77 @@
     <title>form</title>
     <style>
       /* Center the loader */
-      #loader {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        z-index: 1;
-        width: 120px;
-        height: 120px;
-        margin: -76px 0 0 -76px;
-        border: 16px solid #f3f3f3;
-        border-radius: 50%;
-        border-top: 16px solid rgba(212, 92, 13, 0.767);
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
-      }
+      #loader{
+    
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: white;
+}
 
-      @-webkit-keyframes spin {
-        0% {
-          -webkit-transform: rotate(0deg);
+.ball{
+    width: 100px;
+    height: 100px;
+    background-image: url("db79dc5adda84bf5b5aec70fa838f787_w200.gif");
+    border-radius: 50%;
+    animation: ball 2s linear infinite;
+    background-size: cover;
+}
+@keyframes ball {
+    0% {
+        transform: translateY(0px) rotate(180deg);
+    }
+    50% {
+        transform: translateY(-250px) rotate(0);
         }
-        100% {
-          -webkit-transform: rotate(360deg);
+    100% {
+        transform: translateY(0px) rotate(-180deg);
         }
-      }
+}
+.shadow{
+    width: 80px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: shadow 2s linear infinite;
+}
+@keyframes shadow {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
 
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      /* Add animation to "page content" */
-      .animate-bottom {
-        position: relative;
-        -webkit-animation-name: animatebottom;
-        -webkit-animation-duration: 1s;
-        animation-name: animatebottom;
-        animation-duration: 1s;
-      }
-
-      @-webkit-keyframes animatebottom {
-        from {
-          bottom: -100px;
-          opacity: 0;
-        }
-        to {
-          bottom: 0px;
-          opacity: 1;
-        }
-      }
-
-      @keyframes animatebottom {
-        from {
-          bottom: -100px;
-          opacity: 0;
-        }
-        to {
-          bottom: 0;
-          opacity: 1;
-        }
-      }
-
-      #myDiv {
-        display: none;
-        text-align: center;
-      }
+@keyframes dots {
+    0% {
+        opacity: 5%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100%{
+        opacity: 5%;
+    }
+}
     </style>
   </head>
   <body onload="myFunction()" style="margin: 0">
     <button id="status" type="button" onclick="connection()"></button>
-    <div id="loader"></div>
+    <div id="loader">
+      <div class="ball"></div>
+      <div class="shadow"></div>
+       
+  </div>
 
     <div style="display: none" id="myDiv" class="animate-bottom">
       <!-- form page -->

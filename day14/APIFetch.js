@@ -3,7 +3,7 @@
 // third party packages using Axios 
 
 // 1.XHR methods
-const aurl="https://jsonplaceholder.typicode.com/users";
+const aurl="https://api.covid19api.com/summary";
 async function getAPIData(url){
     console.log("Hello");
     var data=await fetch(url);
