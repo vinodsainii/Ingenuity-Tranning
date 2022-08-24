@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha:wght@400&family=Itim&family=Kalam:wght@700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+    <style>
+      /* Center the loader */
+      #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid rgba(212, 92, 13, 0.767);
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Add animation to "page content" */
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <button id="status" type="button" onclick="connection()"></button>
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <!-- form page -->
+      <div id="container">
+        <h1>Contact Form</h1>
+        <div id="form">
+          <h3>Tell us something about You.</h3>
+          <form>
+            <label for="Name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            /><br />
+            <label for="Email">Email: </label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Enter your email"
+            /><br />
+            <label for="Rate">Rate Us on the scale of 10: </label>
+            <input
+              type="number"
+              name="Rate"
+              id="Rate"
+              placeholder="Rate us"
+            /><br />
+            <label for="place">You are accessing this website from: </label>
+            <input list="place" name="place" />
+            <datalist id="place">
+              <option value="Home"></option>
+              <option value="Office"></option>
+              <option value="School"></option>
+              <option value="Others"></option></datalist
+            ><br />
+            <label for="feel">How do you do(check all if you are confused): </label><br>
+            <input type="checkbox" id="feel" name="Happy" />excied<br />
+            <input type="checkbox" id="feel" name="Sad" />Humbled<br />
+            <input type="checkbox" id="feel" name="Cheerful" />Elated<br />
+            <input type="checkbox" id="feel" name="Frustated" />Loved<br />
+            <label for="write">Describe your experince: </label><br />
+            <textarea
+              id="write"
+              name="write"
+              placeholder="Write here"
+            ></textarea
+            ><br />
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
