@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body>
+    <audio controls loop id="audio">
+        <source src="Female ghost laughing.mp3" type="audio/mp3">
+    </audio>
+    <button id="play" onclick="play();">Play</button>
+    <video controls loop autoplay>
+        <source src="https://youtu.be/Gq2hcE4V7Jo" type="video/mp4">
+    </video>
+
+
+
+    <!-- iframes -->
+    <iframe src="https://youtu.be/Gq2hcE4V7Jo" frameborder="0" width="100%" height="100%"></iframe>
+    <script>
+        var myaudio = document.getElementById("audio");
+        var btn = document.getElementById("play");
+        btn.onclick=play;
+        function play(){
+            myaudio.play();
+            myAudio.src="";
+            myAudio.play();
+            myAudio.load();
+            myAudio.atoplay=true;
+            if(myAudio.muted==true){
+                myAudio.muted=false;
+            }
+            // myaudio.src="https://youtu.be/7A_ovYw6pYk"
+        }
+    </script>
+</body>
+</html>

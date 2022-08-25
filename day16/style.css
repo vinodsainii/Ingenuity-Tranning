@@ -1,0 +1,15 @@
+body{
+    min-height: 100vh;
+    background-color: aqua;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#can {
+    margin-top: 20px;
+    background-color: rgb(35, 94, 145);
+   
+    border-radius: 10px;
+}
