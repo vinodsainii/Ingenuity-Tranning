@@ -112,3 +112,18 @@ button:hover
     color: black;
     cursor: pointer;
 }
+
+
+/*..... for canvas...... */
+#canvas {
+    margin-top: 20px;
+    /* background-color: rgb(35, 94, 145); */
+   
+    border-radius: 10px;
+
+
+}
+#source{
+    display: none;
+    z-index: 1;
+}
