@@ -116,10 +116,11 @@ button:hover
 
 /*..... for canvas...... */
 #canvas {
-    margin-top: 20px;
+    margin-top: 0px;
     /* background-color: rgb(35, 94, 145); */
    
     border-radius: 10px;
+    z-index: 4;
 
 
 }
