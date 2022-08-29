@@ -63,8 +63,8 @@ const player = {
   x: 200,
   y: 80,
   size:5,
-  dx: 5,
-  dy: 5,
+  dx: 4,
+  dy: 4,
 };
 
 
